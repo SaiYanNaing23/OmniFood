@@ -102,9 +102,7 @@
     .footer-section{
         padding: 3.6rem 3rem;
     }
-    .nav-mobile{
-        display: block;
-    }
+
     .icon-mobile{
         width: 4.8rem;
         height: 4.8rem;
@@ -122,12 +120,12 @@
         justify-content: center;
         flex-direction: column;
         gap: 4.8rem;
-        background-color: aliceblue;
+        background-color: #f0f8ff;
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
         transition: all .5s;
-        transform: translateX(100%);
+        /* transform: translateX(100%); */
     }
     .nav-open .main-nav{
         opacity: 1;
@@ -140,6 +138,10 @@
     }
     .nav-open .icon-mobile[name="menu-outline"]{
         display: none;
+    }
+    .nav-mobile{
+        display: block;
+        z-index: 1000;
     }
     .main-nav-link:link,
     .main-nav-link:visited{

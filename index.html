@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omni Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!">
+    <title>Omni Food &mdash; Never Cook Again!</title>
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
     <!-- google font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +25,11 @@
         <img class="logo" src="./img/omnifood-logo.png" alt="logo">
         <nav class="main-nav">
             <ul class="main-nav">
-                <li><a class="main-nav-link" href="#">How it works</a></li>
-                <li><a class="main-nav-link" href="#">Meals</a></li>
-                <li><a class="main-nav-link" href="#">Testimonials</a></li>
-                <li><a class="main-nav-link" href="#">Pricing</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+                <li><a class="main-nav-link" href="#how">How it works</a></li>
+                <li><a class="main-nav-link" href="#meal">Meals</a></li>
+                <li><a class="main-nav-link" href="#testimonial">Testimonials</a></li>
+                <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
             </ul>
         </nav>
         <button class="nav-mobile">
@@ -41,8 +47,8 @@
                     <p class="hero-description">
                         The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!
                     </p>
-                    <a href="#" class="btn btn--full btn-right-sm">Start Eating Well</a>
-                    <a href="#" class="btn btn--outline">Learn More &darr; </a>
+                    <a href="#cta" class="btn btn--full btn-right-sm">Start Eating Well</a>
+                    <a href="#how" class="btn btn--outline">Learn More &darr; </a>
                     <div class="delivered-meals">
                         <div class="delivered-img">
                             <img src="./img/customers/customer-1.jpg" alt="Customer Image">
@@ -74,7 +80,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-how">
+        <section class="section-how" id="how">
             <div class="container">
                 <div class="how-header">
                 <span class="subheading">How It Work</span>
@@ -125,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-meals">
+        <section class="section-meals" id="meal">
             <div class="container center-text">
                 <span class="subheading">
                     Meals
@@ -239,7 +245,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-testimonial grid grid--2--cols">
+        <section class="section-testimonial grid grid--2--cols" id="testimonial">
             <div class="testimonial-container">
                     <span class="subheading">Testimonials</span>
                     <h2 class="heading-secondary">Once You Try It, You Can't Go Back</h2>
@@ -322,7 +328,7 @@
                 </figure>
             </div>
         </section>
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <div class="container">
                 <span class="subheading">
                     Pricing
@@ -427,25 +433,25 @@
                 </div>
             </div>
         </section>
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
             <div class="container cta">
                 <div class="cta-text-box">
                     <h2 class="heading-secondary">Get Your first meal for free</h2>
                     <p class="cta-text">
                         Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
                     </p>
-                    <form action="#" class="cta-form">
+                    <form name="sign-Up" class="cta-form" netlify>
                         <div class="">
                             <label for="full-name">Your Name</label>
-                            <input id="full-name" type="text" placeholder="Name" required>
+                            <input name="Full-Name" id="full-name" type="text" placeholder="Name" required>
                         </div>
                         <div>
                             <label for="your-email">Your Email</label>
-                            <input id="your-email" type="email" placeholder="your@gmail.com" required>
+                            <input name="Email" id="your-email" type="email" placeholder="your@gmail.com" required>
                         </div>
                         <div>
                             <label for="select-where">Where did you hear from us?</label>
-                            <select name="" id="select-where">
+                            <select name="Select-where" id="select-where">
                                 <option value="Please Choice One Option">Please Choice One Option</option>
                                 <option value="Friend and Family">Friend and Family</option>
                                 <option value="Youtube Vedio">Youtube Vedio</option>
@@ -528,5 +534,9 @@
     <!-- Iconic Icon Link -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- polyfill -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <!-- Js Link -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
